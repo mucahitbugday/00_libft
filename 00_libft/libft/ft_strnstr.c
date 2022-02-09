@@ -2,21 +2,21 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	char	*ptr_haystack;
-	size_t	needle_len;
-	size_t	j;
+	size_t	hayint;
+	size_t	needint;
 
-	ptr_haystack = (char *) haystack;
-	needle_len = ft_strlen(needle);
-	if (needle_len == 0)
-		return (ptr_haystack);
-	j = 0;
-	while (*(ptr_haystack) && (len >= needle_len))
+	hayint = 0;
+	if (*needle == 0)
+		return ((char *)haystack);
+	while (haystack[hayint] != 0 && hayint < len)
 	{
-		if (ft_strncmp(needle, ptr_haystack, needle_len) == 0)
-			return (ptr_haystack);
-		ptr_haystack++;
-		len--;
+		needint = 0;
+		while (haystack[hayint + needint] == needle[needint]
+			&& needle[needint] != 0 && needint + hayint < len)
+			needint++;
+		if (!needle[needint])
+			return ((char *)&haystack[hayint]);
+		hayint++;
 	}
 	return (NULL);
 }
