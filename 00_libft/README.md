@@ -241,3 +241,21 @@ b[3] = 0         a[3] = 0
 b[4] = 0         a[4] = 0 
 ----------------------
 • strdup
+
+ft_substr
+/*
+	ft_substr()
+	gönderilen dizinin x elemanından başlayarak y elemanına kadar geri dönderir
+	src[] = "0123456789";
+	ft_substr(src,0,2);
+	çıktısı 01 olur
+*/
+----------------------
+ft_strjoin
+/*
+**s1 dizsi ve s2 dizisini birleştirir.
+**s1 ve s2 dizisini kontrol eder boş ise 0 gönderir
+**ptr_str dizisine malloc ile s1 ve s2 dizisinin uzunluğu +1 fazlası kadar alan açar.
+**ptr_str dizisine s1 ve s2 kopyalanır sonun '\0' koyar return(ptr_str)
+*/
+----------------------
