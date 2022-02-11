@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:22:42 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/11 20:34:06 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/11 21:26:56 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ num: Tahsis edilecek eleman sayısını gösterir.
 size: Her bir elemanın byte olarak boyutunu gösterir.
 */
 
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -45,3 +46,4 @@ int main(void)
 
     free(ip);
 }
+*/
