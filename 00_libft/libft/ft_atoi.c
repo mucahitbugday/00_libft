@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:22:10 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/10 12:22:15 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/11 20:27:45 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,25 @@ int	ft_atoi(const char *str)
 	}
 	return (number);
 }
+
+
+/*
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void fonk(void);
+
+int main(void)
+{
+    char cdizi[40];
+
+    strcpy(cdizi, "\n 12q34q");
+    printf("Karakter dizisi: %sInt değer: %d\n", cdizi, ft_atoi(cdizi));
+
+    strcpy(cdizi, "\n 12q34q");
+    printf("Karakter dizisi: %sInt değer: %d", cdizi, atoi(cdizi));
+
+    return 0;	
+}
+*/

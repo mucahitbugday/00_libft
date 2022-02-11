@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:15:21 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/10 12:15:55 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/11 20:03:24 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,22 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main( void )
+{
+    char cdizi1[] = "Bilgisayar";
+    const char cdizi2[] = "Programlar";
+
+    printf("cdizi1 bellek içeriği: %s, cdizi2 bellek içeriği: %s\n", cdizi1, cdizi2);
+
+    memmove(cdizi1, cdizi2, 10);
+
+    printf("cdizi1 bellek içeriği: %s, cdizi2 bellek içeriği: %s\n", cdizi1, cdizi2);
+
+    return 0;
+}
+*/
