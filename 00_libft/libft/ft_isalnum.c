@@ -6,11 +6,13 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:11:27 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/12 09:11:04 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/12 11:10:57 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Klavyeden girilen rakam değerler mi
 
 int	ft_isalnum(int c)
 {

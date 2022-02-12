@@ -6,11 +6,13 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:40:35 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/11 21:28:35 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/12 11:17:26 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Gönderilen karakterin benzerini oluşturu
 
 char	*ft_strdup(const char *s1)
 {

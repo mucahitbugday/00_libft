@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:12:21 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/11 18:52:45 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/12 11:10:56 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+
+// Yazdırılbilir karakter olup olmadıgını sorgular 
 
 /*
 int main ()
