@@ -6,36 +6,61 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:22:10 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/11 20:27:45 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/12 09:09:17 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+int     ft_isspace(int c)
 {
-	long long int	number;
-	int				sign;
-
-	number = 0;
-	sign = 1;
-	while (*str == ' ' || (*str >= 9 && *str <= 13))
-		str++;
-	if (*str == '-')
-		sign = -1;
-	if (*str == '+' || *str == '-')
-		str++;
-	while (ft_isdigit(*str))
-	{
-		number = (number * 10) + (*str - '0') * sign;
-		str++;
-		if (number > 2147483647)
-			return (-1);
-		if (number < -2147483648)
-			return (0);
-	}
-	return (number);
+    return (c == '\f' || c == '\n' || c == '\r' \
+    || c == '\t' || c == '\v' || c == ' ');
 }
+
+int     ft_atoi(const char *str)
+{
+    long long int num;
+    int sign;
+
+    num = 0;
+    sign = 1;
+    while (ft_isspace(*str))
+        str++;
+    if (*str == '-')
+        sign = - 1;
+    if (*str == '-' || *str == '+')
+        str++;
+    while (*str >= '0' && *str <= '9')
+        num = num * 10 + *str++ - '0';
+    return (num * sign);
+}
+
+
+// int	ft_atoi(const char *str)
+// {
+// 	long long int	number;
+// 	int				sign;
+
+// 	number = 0;
+// 	sign = 1;
+// 	while (*str == ' ' || (*str >= 9 && *str <= 13))
+// 		str++;
+// 	if (*str == '-')
+// 		sign = -1;
+// 	if (*str == '+' || *str == '-')
+// 		str++;
+// 	while (ft_isdigit(*str))
+// 	{
+// 		number = (number * 10) + (*str - '0') * sign;
+// 		str++;
+// 		if (number > 2147483647)
+// 			return (-1);
+// 		if (number < -2147483648)
+// 			return (0);
+// 	}
+// 	return (number);
+// }
 
 
 /*

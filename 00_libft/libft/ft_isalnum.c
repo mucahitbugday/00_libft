@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:11:27 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/11 18:49:36 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/12 09:11:04 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	if (ft_isdigit(c) != 0 || ft_isalpha(c) != 0)
-		return (1);
-	return (0);
+	return (ft_isalpha(c) || ft_isdigit(c));
 }
 
 /*
