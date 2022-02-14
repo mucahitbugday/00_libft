@@ -6,12 +6,13 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:22:10 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/14 16:32:48 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/14 18:13:51 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//isspace karakterlerini arar
 int	ft_isspace(int c)
 {
 	return (c == '\f' || c == '\n' || c == '\r'
@@ -25,12 +26,17 @@ int	ft_atoi(const char *str)
 
 	number = 0;
 	sign = 1;
+	
+	//
 	while (ft_isspace(*str))
 		str++;
+		
 	if (*str == '-')
 		sign = -1;
+	
 	if (*str == '+' || *str == '-')
 		str++;
+	
 	while (ft_isdigit(*str))
 	{
 		number = (number * 10) + (*str - '0') * sign;
