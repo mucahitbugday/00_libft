@@ -14,3 +14,4 @@ assets/tmp
 run_test
 assets/libtests
 .vscode
+libft/test.c
