@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 13:44:52 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/12 16:03:33 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/14 17:57:51 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,18 +37,3 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	p[i] = '\0';
 	return (p);
 }
-
-// char	 r(unsigned int i, char c)
-// {
-//     i++;
-// 	if (c >= 'A' && c <= 'Z')
-// 		return (c + 'a' - 'A');
-// 	return (c);
-// }
-
-// int main(void)
-// {
-// 	char str[] = "MERhaba";
-// 	printf("%s", ft_strmapi(str, r));
-//     return (0);
-// }

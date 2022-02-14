@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 16:08:07 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/12 17:00:51 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/14 17:57:32 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,21 +26,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 	s[i] = '\0';
 }
-
-/*
-#include <unistd.h>
-void ft_printchar(unsigned int n, char *str)
-{
-	int num = '0' + n;
-	write(1, &(num), 1);
-	write(1, str, 1);
-    write(1, " ", 1);
-}
-
-int main(void)
-{
-	char str[10] = "abcdefg";
-	ft_striteri(str, ft_printchar);
-	return (0);
-}
-*/

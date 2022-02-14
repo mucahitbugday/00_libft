@@ -6,13 +6,12 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 04:28:57 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/14 16:35:49 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/14 17:56:36 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// kaç basamak olduğunu hesaplar
 static size_t	ft_get_digit(int n)
 {
 	size_t	count;

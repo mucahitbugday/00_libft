@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 13:29:07 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/12 00:33:36 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/14 17:58:04 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,28 +30,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr_str[j] = '\0';
 	return (ptr_str);
 }
-
-/*
-	ft_substr()
-	gönderilen dizinin x elemanından başlayarak y elemanına kadar geri dönderir
-	src[] = "0123456789";
-	ft_substr(src,0,2);
-	çıktısı 01 olur
-*/
-
-/*
-#include <stdio.h>
-int main(void){
-
-	unsigned int x;
-	size_t y;
-
-	x = 0;
-	y = 2;
-
-	char src[] = "0123456789";
-	printf("(%d%zu) yazar: ft_putstr(src,x,y): %s",x,y-1,ft_substr(src,x,y));
-	
-	return(0);
-}
-*/

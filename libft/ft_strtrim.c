@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 16:20:09 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/11 21:27:41 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/14 17:57:58 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		j--;
 	return (ft_substr(s1, 0, j));
 }
-
-/*
-#include <stdio.h>
-int main(void)
-{
-	printf("ft_strtrim:  %s\n",ft_strtrim("lorem ipsum dolor sit", "lorem i"));
-	return (0);
-}
-*/

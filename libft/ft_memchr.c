@@ -6,11 +6,9 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:20:27 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/12 18:30:08 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/14 17:56:56 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// Gönderilen karakterin bellekteki adresini döndürür
 
 #include "libft.h"
 

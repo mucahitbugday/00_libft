@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:12:51 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/11 20:00:35 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/14 17:57:45 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,20 +21,3 @@ size_t	ft_strlen(const char *s)
 		cont++;
 	return (cont);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main( void )
-{
-    const char *cp = "Bilgisayar";
-    int ret;
-
-    ret = strlen(cp);
-
-    printf("%s karakter dizisinin uzunluğu: %d\n", cp, ret);
-
-    return 0;
-}
-*/
