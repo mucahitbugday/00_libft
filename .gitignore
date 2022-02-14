@@ -15,4 +15,4 @@ run_test
 assets/libtests
 .vscode
 libft/test.c
-test
+/test
