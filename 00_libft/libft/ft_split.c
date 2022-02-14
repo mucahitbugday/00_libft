@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 01:44:50 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/12 16:56:27 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/12 18:31:10 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 
 int ft_wordcounter(const char *str, char c)
 {
-	int	i;
-	int	c_mi;
+	int i;
+	int c_mi;
 
 	i = 0;
 	c_mi = 0;
@@ -38,7 +38,7 @@ int ft_wordcounter(const char *str, char c)
 
 int ft_charcounter(const char *str, char c)
 {
-	int	i;
+	int i;
 
 	i = 0;
 	while (*str && (*str != c))
@@ -49,34 +49,34 @@ int ft_charcounter(const char *str, char c)
 	return (i);
 }
 
-char	**ft_split(char const *str, char c)
+char **ft_split(char const *str, char c)
 {
-	char	**ret;
-	int		retindex;
-	
+	char **ret;
+	int retindex;
+
 	retindex = 0;
-	//str dizisi boş ise 0 gönder
+	// str dizisi boş ise 0 gönder
 	if (!str)
 		return (0);
-	//ret dizisine (kelime sayısı) + 1 kadar alan açılır
+	// ret dizisine (kelime sayısı) + 1 kadar alan açılır
 	ret = malloc(sizeof(char *) * ft_wordcounter(str, c) + 1);
-	//ret dizisine alan açılmadı ise 0 gönder.
+	// ret dizisine alan açılmadı ise 0 gönder.
 	if (!ret)
 		return (0);
-	//str dizisi boş olana kadar dön
+	// str dizisi boş olana kadar dön
 	while (*str)
 	{
-		//str dizesinin 0. indisi c karakteri ile eşit ve str dizesi null değilse dön
+		// str dizesinin 0. indisi c karakteri ile eşit ve str dizesi null değilse dön
 		while (*str == c && *str)
 			str++;
-		//str dizisinin sonuna geldiğibde çık.
+		// str dizisinin sonuna geldiğibde çık.
 		if (*str == '\0')
-			break ;
-		//ret'in 0. indisinden ft_substr ile ekleme yapar.
-		//ft_substr(x,y,z) = x elemanında y den başla z ye kadar yaz
+			break;
+		// ret'in 0. indisinden ft_substr ile ekleme yapar.
+		// ft_substr(x,y,z) = x elemanında y den başla z ye kadar yaz
 		ret[retindex] = ft_substr(str, 0, ft_charcounter(str, c));
 		retindex++;
-		//kelimenein başına gelir
+		// kelimenein başına gelir
 		str += ft_charcounter(str, c);
 	}
 	ret[retindex] = NULL;
