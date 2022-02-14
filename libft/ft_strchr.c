@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:18:21 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/11 19:59:43 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/14 16:38:14 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,20 +29,3 @@ char	*ft_strchr(const char *s, int c)
 		return (ptr_s + i);
 	return (NULL);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main( void )
-{
-    const char cdizi[] = "Bilgisayar";
-    char *ret;
-
-    ret = strchr(cdizi, 's');
-
-    printf("Bulunan karakterden itibaren dizi içeriği: %s", ret);
-
-    return 0;
-}
-*/

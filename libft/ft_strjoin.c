@@ -6,16 +6,9 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 15:35:09 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/12 18:32:47 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/14 16:38:42 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-	s1 dizsi ve s2 dizisini birleştirir.
-	s1 ve s2 dizisini kontrol eder boş ise 0 gönderir
-	ptr_str dizisine malloc ile s1 ve s2 dizisinin uzunluğu +1 fazlası kadar alan açar.
-	ptr_str dizisine s1 ve s2 kopyalanır sonun '\0' koyar return(ptr_str)
-*/
 
 #include "libft.h"
 
@@ -44,15 +37,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr_str[i] = '\0';
 	return (ptr_str);
 }
-
-/*
-#include <stdio.h>
-int main (void)
-{
-    char const s1[] = "01234";
-    char const s2[] = "56789";
-    printf("s1='01234'\ns2='56789'\ns1+s2=%s\n",ft_strjoin(s1,s2));
-
-    return(0);
-}
-*/

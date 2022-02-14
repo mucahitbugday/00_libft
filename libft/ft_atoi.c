@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:22:10 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/12 18:25:53 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/14 16:32:48 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ int	ft_isspace(int c)
 		|| c == '\t' || c == '\v' || c == ' ');
 }
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	long long int	number;
-	int 			sign;
+	int				sign;
 
 	number = 0;
 	sign = 1;
@@ -42,24 +42,3 @@ int ft_atoi(const char *str)
 	}
 	return (number);
 }
-
-/*
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-void fonk(void);
-
-int main(void)
-{
-	char cdizi[40];
-
-	strcpy(cdizi, "\n 12q34q");
-	printf("Karakter dizisi: %sInt değer: %d\n", cdizi, ft_atoi(cdizi));
-
-	strcpy(cdizi, "\n 12q34q");
-	printf("Karakter dizisi: %sInt değer: %d", cdizi, atoi(cdizi));
-
-	return 0;
-}
-*/

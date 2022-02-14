@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:16:26 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/12 11:37:27 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/14 16:38:56 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,21 +30,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (srcsize);
 }
-
-/*
-
-#include <stdio.h>
-#include <string.h>
-
-int main( void )
-{
-    char cdizi1[] = "Bilgisayar";
-    const char cdizi2[] = "Programlama";
-
-    ft_strlcpy(cdizi1, cdizi2, ft_strlen(cdizi1));
-
-    printf("cdizi1 bellek içeriği: %zu\n",  ft_strlcpy(cdizi1, cdizi2, ft_strlen(cdizi1)));
-
-    return 0;
-}
-*/

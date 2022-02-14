@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/14 15:21:28 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/14 15:21:29 by mbugday          ###   ########.fr       */
+/*   Created: 2022/02/14 15:25:19 by mbugday           #+#    #+#             */
+/*   Updated: 2022/02/14 16:36:23 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+	Bağlı liste oluşturu
+*/
+
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new_lst)
+t_list	*ft_lstnew(void *content)
 {
-	t_list	*current;
+	t_list	*list;
 
-	if (!lst || !new_lst)
-		return ;
-	current = *lst;
-	if (current == NULL)
-		*lst = new_lst;
-	else
-	{
-		current = ft_lstlast(*lst);
-		current->next = new_lst;
-	}
+	list = (t_list *)malloc(sizeof(t_list));
+	if (!list)
+		return (NULL);
+	list->content = content;
+	list->next = NULL;
+	return (list);
 }
