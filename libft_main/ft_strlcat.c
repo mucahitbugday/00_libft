@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:16:52 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/17 02:02:31 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 12:48:40 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,27 +15,22 @@
 //BK
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	i;
-	size_t	j;
-	size_t	dst_len;
-	size_t	src_len;	
+	size_t	n;
+	size_t	m;
+	size_t	p;
 
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	if (dstsize < 1)
-		return (src_len);
-	if (dstsize < dst_len)
-		return (dstsize + src_len);
-	i = dst_len;
-	j = 0;
-	while (*(src + j) && (i < dstsize - 1))
+	m = 0;
+	n = ft_strlen(dst);
+	p = ft_strlen(src);
+	if (dstsize == 0)
+		return (p);
+	while ((src[m] != '\0') && ((n + m) < (dstsize - 1)))
 	{
-		*(dst + i) = *(src + j);
-		i++;
-		j++;
+		dst[n + m] = src[m];
+		m++;
 	}
-	*(dst + i) = '\0';
-	if (dstsize < dst_len)
-		return (src_len + dstsize);
-	return (src_len + dst_len);
+	dst[n + m] = '\0';
+	if (dstsize > n)
+		return (n + p);
+	return (dstsize + p);
 }

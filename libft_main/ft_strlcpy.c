@@ -6,12 +6,12 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:16:26 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/17 02:01:13 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 12:51:30 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//bK
+
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	srcsize;
