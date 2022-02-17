@@ -6,34 +6,30 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 13:44:52 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/14 17:57:51 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 12:42:11 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// strmapi e gonderilen char dizisini ikinic fonksiyona göre geri dönerir.
-//(*f) fonksiyon olduğunu belirtir.
-// fonksiyonun parametreleri (unsigned int, char olmalı)
-
-char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(const char *src, char (*f)(unsigned int, char))
 {
-	char	*p;
-	int		c;
+	char	*src_ptr;
+	int		src_len;
 	int		i;
 
 	i = 0;
-	if (!s)
+	if (!src)
 		return (0);
-	c = ft_strlen(s);
-	p = (char *) malloc((c + 1) * sizeof(char));
-	if (!p)
+	src_len = ft_strlen(src);
+	src_ptr = (char *) malloc((src_len + 1) * sizeof(char));
+	if (!src_ptr)
 		return (0);
-	while (i < c)
+	while (i < src_len)
 	{
-		p[i] = f(i, (char )(s[i]));
+		src_ptr[i] = f(i, (char )(src[i]));
 		i++;
 	}
-	p[i] = '\0';
-	return (p);
+	src_ptr[i] = '\0';
+	return (src_ptr);
 }

@@ -6,13 +6,11 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 01:44:50 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/14 16:38:06 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 12:40:26 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// gönderilen karakterden sonrasını alır ve yenı dızı olusturu
 
 int	ft_wordcounter(const char *str, char c)
 {
