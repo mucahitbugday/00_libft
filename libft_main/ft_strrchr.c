@@ -6,13 +6,14 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:18:59 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/14 21:35:19 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 12:15:20 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//s dizisinin sonunda aramaya başlar bulduğu andan sonraki karakterleri bastırır.
+//s dizisinin sonunda aramaya başlar 
+//bulduğu andan sonraki karakterleri bastırır.
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -37,9 +38,7 @@ char	*ft_strrchr(const char *s, int c)
 int main(void)
 {
 	char* str = "a1 a5 a3 a4 a5 a6";
-
 	printf("%s\n", ft_strrchr(str, '5'));
-
 	return 0;
 }
 */

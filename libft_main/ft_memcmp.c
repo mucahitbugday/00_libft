@@ -6,14 +6,15 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:21:01 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/17 11:08:00 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 12:11:10 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//s1 dizisi ile s2 dizsimi n karakerlerini kadar karşılaştırır. hangi char karakterlerini
-// karşılaştırı s1 dizisi s2 den büyük-küçük-eşit olabilir
+/*s1 dizisi ile s2 dizsimi n karakerlerini kadar karşılaştırır. 
+hangi char karakterlerini
+karşılaştırı s1 dizisi s2 den büyük-küçük-eşit olabilir.*/
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

@@ -6,15 +6,15 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 16:20:09 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/15 02:50:28 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 12:16:09 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 //	baştan ve sondan ikinci gönderilen dizideki karakterleri arar.
-//	başta  buldursa son karaltere kadar siler sonda bulursa bulduğu ilk karakterden itibaren siler
-
+//	başta  buldursa son karaltere kadar siler sonda bulursa 
+// 	bulduğu ilk karakterden itibaren siler
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -24,7 +24,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s1 || !set)
 		return (NULL);
 	i = 0;
-	
 	while (*s1 && ft_strchr(set, *s1))
 		s1++;
 	j = ft_strlen(s1);
