@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 17:06:03 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/15 04:19:21 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 11:41:32 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,14 @@ void	ft_putstr_fd(char *s, int fd)
 }
 
 /*
+//diziyi deneme.txt ye yazar
 int main(void)
 {
+	ssize_t b = open("deneme.txt", O_WRONLY);
+	
 	char *str = "Hello World!";
-	ft_putstr_fd(str,1);
+	
+	ft_putstr_fd(str,b);
 	
 	return 0;
 }

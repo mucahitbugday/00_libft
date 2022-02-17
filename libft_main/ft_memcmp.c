@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:21:01 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/14 21:48:25 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 11:08:00 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 #include <stdio.h>
 int main(void)
 {
-	char s1[] = "abdefg123";
+	char s1[] = "abda";
 	char s2[] = "abdefg";
-	printf("%d\n", ft_memcmp(s1, s2, 7));
+	printf("%d\n", ft_memcmp(s1, s2, 4));
 	printf("%d\n", ft_memcmp(s1, s2, 6));
 
 	return (0);

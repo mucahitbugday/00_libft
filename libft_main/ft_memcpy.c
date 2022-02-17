@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:14:57 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/14 20:10:21 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 01:56:58 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 int main(){
 	
 	char str1[30];
-	char str2[30] = "Hello World!";
+	char str2[30] = "";
 	
 	ft_memcpy(str1, str2, strlen(str2));
 

@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:19:23 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/15 04:37:27 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 11:09:12 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 #include <stdio.h>
 int main(void)
 {
-	char *x = "aaHello";
-	char *y = "aaWorld";
+	char *x = "abdefg123";
+	char *y = "abdefg";
 	
-	int z = ft_strncmp(x,y,3);
+	int z = ft_strncmp(x,y,8);
 	
 	printf("%d",z);
 	

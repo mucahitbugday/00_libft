@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:22:10 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/15 00:10:34 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 11:07:40 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,16 +47,18 @@ int	ft_atoi(const char *str)
 
 /*
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main()
 {
     char* s1 = "-123";   
-    char* s2 = "a123";
+    char* s2 = "-123";
     char* s3 = "  123aa";
     char* s4 = "123 425";
     
     int num1 = ft_atoi(s1);
-    int num2 = ft_atoi(s2);
+    int num2 = atoi(s2);
     int num3 = ft_atoi(s3);
     int num4 = ft_atoi(s4);
 

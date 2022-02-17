@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 17:23:49 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/15 04:27:33 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 11:49:36 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,8 @@ void	ft_putnbr_fd(int n, int fd)
 /*
 int main(void)
 {
-	int n = 1234;
-	int fd = 2;
-	
-	ft_putnbr_fd(n,fd);
+	int n = -1234;
+	ssize_t a = open("deneme.txt", O_WRONLY);
+	ft_putnbr_fd(n,a);
 }
 */

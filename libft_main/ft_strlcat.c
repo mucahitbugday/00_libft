@@ -6,12 +6,13 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:16:52 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/10 12:16:54 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 02:02:31 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//BK
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
@@ -36,6 +37,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	*(dst + i) = '\0';
 	if (dstsize < dst_len)
 		return (src_len + dstsize);
-	else
-		return (src_len + dst_len);
+	return (src_len + dst_len);
 }

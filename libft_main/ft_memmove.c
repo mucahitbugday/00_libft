@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:15:21 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/15 00:37:05 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 01:57:56 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 //memmove=> kopyalanacak konuma gider ara belleğe ve kopyalananı ara belleğe yapıştırır.
 //Bu nedenle, hız memcpyve kararlılıkmemmove
+
+
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

@@ -6,7 +6,7 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:21:25 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/14 22:07:53 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/17 11:10:17 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char	*ft_strnstr(const char *dizi, const char *ara, size_t len)
 	}
 	return (NULL);
 }
+
 /*
 #include <stdio.h>
 int main()
@@ -45,7 +46,7 @@ int main()
 	char* ptr = ft_strnstr(s1, "en", 10);
 	printf("%s\n", ptr);
 	
-	char* ptr1 = ft_strnstr(s1, "en", 5);
+	char* ptr1 = ft_strnstr(s1, "en", 2);
 	printf("%s\n", ptr1);
 
 	return (0);
