@@ -6,13 +6,12 @@
 /*   By: mbugday <mbugday@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:22:10 by mbugday           #+#    #+#             */
-/*   Updated: 2022/02/17 12:34:21 by mbugday          ###   ########.fr       */
+/*   Updated: 2022/02/20 17:48:15 by mbugday          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//isspace karakterlerini arar
 int	ft_isspace(int c)
 {
 	return (c == '\f' || c == '\n' || c == '\r'
