@@ -1,12 +1,12 @@
-• isalpha
+* isalpha
 Fonksiyona verilen c parametre değerinin alfabede bulunan bir harf olup olmadığını kontrol eder.
 çıktı: 1 or 0
 ----------------------
-• isdigit
+* isdigit
 Fonksiyona verilen c parametre değerinin bir rakam olup olmadığını kontrol eder.
 çıktı: 1 or 0
 ----------------------
-• isalnum
+* isalnum
 Fonksiyona verilen c parametre değerinin alfabede bulunan bir harf ve bir rakam olup olmadığını kontrol eder.
 
 örnek çıktı:
@@ -14,19 +14,19 @@ Fonksiyona verilen c parametre değerinin alfabede bulunan bir harf ve bir rakam
 & alfanumerik bir karakter değildir!
 çıktı: 1 or 0
 ----------------------
-• isascii
+* isascii
 Bir karakterin Ascii olup olmadığını analiz edin.
 çıktı: 1 or 0
 ----------------------
-• isprint
+* isprint
 Fonksiyona verilen c parametre değerinin yazdırılabilir bir karakter olup olmadığını kontrol eder.
 çıktı: 1 or 0
 ----------------------
-• strlen
+* strlen
 Str parametresi ile gösterilen ve boş bir karakter ('\0') ile sonlandırılmış karakter dizisinin uzunluğunu, dizi sonundaki boş karakter hariç olmak üzere, hesaplar.
 çıktı: str dizisinin uzunluğu kadadar çıktı verir
 ----------------------
-• memset
+* memset
 C parametresi ile gösterilen bellek bölgesindeki karakteri (unsigned char), dest parametresindeki bellek bölgesinin ilk n parametre değeri kadar byte'ına kopyalar.
 memset() , bir bellek bloğunu belirli bir değerle doldurmak için kullanılır.
 
@@ -37,10 +37,10 @@ memset(cdizi, 'x', 5);
 cdizi bellek içeriği: Bilgisayar
 cdizi bellek içeriği: xxxxxsayar
 ----------------------
-• bzero
+* bzero
 ??
 ----------------------
-• memcpy
+* memcpy
 Src parametresi ile gösterilen bellek bölgesindeki karakterleri, n parametre değeri kadar uzunlukta, dest parametresindeki bellek bölgesine kopyalar.
 void* memcpy(void *dest, const void *src, size_t n);
 
@@ -63,7 +63,7 @@ int main( void )
 Bilgisayar&Programlama
 Bilgisayar&
 ----------------------
-• memmove
+* memmove
 void* memmove(void *dest, const void *src, size_t n);
 
 Src parametresi ile gösterilen bellek bölgesindeki karakterleri, n parametre değeri kadar uzunlukta, dest parametresindeki bellek bölgesine kopyalar.
@@ -85,19 +85,19 @@ int main( void )
 cdizi1 bellek içeriği: Bilgisayar, cdizi2 bellek içeriği: Programlar
 cdizi1 bellek içeriği: Programlar, cdizi2 bellek içeriği: Programlar
 ----------------------
-• strlcpy
+* strlcpy
 dizileri copyalamaya yarar
 ----------------------
-• strlcat
+* strlcat
 dizileri kemeye yarar
 ----------------------
-• toupper
+* toupper
 Küçük harfleri büyük harf yapar
 ----------------------
-• tolower
+* tolower
 Büyük harfleri küçük harf yapar
 ----------------------
-• strchr
+* strchr
 Str parametresi ile gösterilen karakter dizisinde c parametresi ile gösterilen değerin (unsigned char olarak değerlendirilir) ilk geçtiği yeri arar ve bu bellek adresini gösteren bir işaretçi geri döndürür.
 
 int main( void )
@@ -113,7 +113,7 @@ int main( void )
 }
 Bulunan karakterden itibaren dizi içeriği: sayar
 ----------------------
-• strrchr
+* strrchr
 Str parametresi ile gösterilen karakter dizisinde c parametresi ile gösterilen değerin (unsigned char olarak değerlendirilir) son geçtiği yeri arar ve bu bellek adresini gösteren bir işaretçi geri döndürür.
 
 int main( void )
@@ -131,7 +131,7 @@ int main( void )
 Çıktı:
 Bulunan son i karakterinden itibaren dizi içeriği: isayar
 ----------------------
-• strncmp
+* strncmp
 Str1 parametresi ile gösterilen karakter dizisinin, n parametre değeri kadar ilk karakterini, str2 parametresi ile gösterilen karakter dizisi ile karşılaştırır. Eğer her iki karakter dizisindeki tüm karakterler aynı ise sıfır değeri, aksi takdirde sıfırdan farklı bir değer geri döndürür.
 
 Fonksiyon str1 ve str2 parametreleri ile gösterilen karakter dizilerini ilk karakterden itibaren karşılaştırmaya başlar. Birbirlerine eşitse, karakterler farklı olana veya karakter dizisinin sonunu gösteren boş bir karakterle karşılaşana veya her iki karakter dizisinde n parametre değeri kadar eşleşene kadar karşılaştırma işlemine devam eder.
@@ -153,7 +153,7 @@ int main( void )
 Çıktı:
 cp1 karakter dizisi cp2 karakter dizisine eşittir!
 ----------------------
-• memchr
+* memchr
 Ptr parametresi ile gösterilen bellek bölgesinin n parametre değeri kadar ilk byte'ında c parametresi ile gösterilen değerin (unsigned char olarak değerlendirilir) ilk geçtiği yeri arar ve bu bellek adresini gösteren bir işaretçi geri döndürür.
 
 int main( void )
@@ -169,7 +169,7 @@ v
 Çıktı:
 g karakterinin bellek adresi: 00403027
 ----------------------
-• memcmp
+* memcmp
 Ptr1 parametresi ile gösterilen bellek bölgesinin n parametre değeri kadar ilk byte'ını ptr2 parametresi ile gösterilen bellek bölgesi ile karşılaştırır. Eğer her iki bellek bölgesindeki tüm değerler aynı ise sıfır değeri, aksi takdirde sıfırdan farklı bir değer geri döndürür.
 
 <0 ise ptr1 bellek içeriği ptr2 bellek içeriğinden küçüktür.
@@ -194,7 +194,7 @@ int main( void )
 Çıktı:
 cp2 bellek içeriği cp1 bellek içeriğinden küçüktür!
 ----------------------
-• strnstr
+* strnstr
 Uzunluğu sınırlı bir dizedeki ilk alt dizeyi bulun
 
 char * strnstr(const char * s1, const char * s2, size_t len);
@@ -206,14 +206,14 @@ Aranan dize
 len
 aranacak maksimum karakter sayısı
 ----------------------
-• atoi
+* atoi
 Str parametresi ile gösterilen karakter dizisini int bir değere çevirir.
 
 325325 çıktısı 325325
 7ce8521 çıktısı 7
 a4325 çıktısı: 'boş'
 ----------------------
-• calloc
+* calloc
 malloc gibi bellekten yer ayırır. mallocta ayrılan değerler rasgele olurken calloc da oluşturulan belleğin alanları 0 dır
 
 #include <stdio.h>
@@ -240,7 +240,7 @@ b[2] = 0         a[2] = 0
 b[3] = 0         a[3] = 0 
 b[4] = 0         a[4] = 0 
 ----------------------
-• strdup
+* strdup
 
 ft_substr
 /*
