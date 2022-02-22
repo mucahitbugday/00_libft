@@ -12,7 +12,7 @@
 * [`ft_strlcat`](libft/ft_strlcat.c)			    - boyuta bağlı dize bitiştirme.
 * [`ft_toupper`](libft/ft_toupper.c)			    - küçük harften büyük harfe dönüştürme.
 * [`ft_tolower`](libft/ft_tolower.c)			    - büyük harften küçük harfe dönüştürme.
-* [`ft_strchr`](libft/ft_strchr.c)			    - dizedeki karakteri bulun (ilk oluşum).
+* [`ft_strchr`](libft/ft_strchr.c)			    - dizedeki karakteri bulun (ilk oluşum)
 * [`ft_strrchr`](libft/ft_strrchr.c)			    - dizedeki karakteri bulun (son oluşum).
 * [`ft_strncmp`](libft/ft_strncmp.c) 			    - dizeleri karşılaştırın (boyutla sınırlı).
 * [`ft_memchr`](libft/ft_memchr.c)		        - bayt dizesindeki baytı bulun.
