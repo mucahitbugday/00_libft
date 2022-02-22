@@ -15,7 +15,7 @@
 #################
 
 #	Libft Makefile path
-LIBFTDIR	=	../../libft
+LIBFTDIR	=../../libft
 
 #	Sources
 SRCDIR		=	./
@@ -150,14 +150,7 @@ endif
 #	First target
 all: $(ASSETDIR)/$(ANAME) $(SONAME) $(ASSETDIR)/$(NAME) $(ASSETDIR)/$(LIBMALLOC) $(WRAPNAME)
 
-ifneq ($(OS),Linux)
-$(SONAME):
-	@rm -rf $(TMPLIB) || echo -n
-	@mkdir -p $(TMPLIB)
-	@cd $(TMPLIB) && ar -xv ../libft.a 1>/dev/null
-	@$(call exec_color, "\033[38;5;$(LINK_COLOR_T)m➤ \033[38;5;$(LINK_COLOR)m",\
-		$(CC_SO), $(CSOFLAGS), $(TMPLIB)/*.o, -o, $(SONAME))
-else
+ifneq ($(OS))"
 $(SONAME):
 	@make -C $(LIBFTDIR) so
 	@if [ -e $(LIBFTDIR)/libft.so ];\
